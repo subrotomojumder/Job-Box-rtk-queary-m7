@@ -8,6 +8,7 @@ import EmployerRegistration from "./EmployerRegistration";
 const AccountCreator = () => {
   const navigate = useNavigate();
   const { type } = useParams();
+  console.log(type)
 
   if (type === "candidate") {
     return <CandidateRegistration />;
